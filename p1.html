@@ -20,33 +20,39 @@
           
           <!--Flipkart name and logo-->
           <div class="col" style="color: aliceblue; text-align: right;">
-            
-            <div><h4>Flipkart</h4></div>
-            
-            <div style="font-size: small; margin-top: -10px; ">Explore Plus <img width="10" src="plus_aef861.png"></div>
-          
+            <div class="name">
+              <div><h4>Flipkart</h4></div>
+              
+              <div style="font-size: small; margin-top: -10px; ">Explore Plus <img width="10" src="plus_aef861.png"></div>
+            </div>
           </div>
           
           <!--Searchbar-->  
-          <div class="col" style="color: aliceblue;">
-            
-            <div style="text-align: center; margin-top: 10px;">
-              
-              <input type="text" style="min-height: 40px;" name="serchbar" size="40" placeholder="Serch for products,brands amd more">
-              
-              <button type="submit" class="submit_button">
-                <a class="fa fa-search icon"  aria-hidden="true" ></a> 
-              </button>
-            
-            </div>
-          
+          <div class="col" style="color: aliceblue; text-align: center;">
+            <form action="">
+              <div class="wrap">
+                <div class="search">
+                   
+                   <input type="text" class="searchTerm" style="min-height: 40px;" name="serchbar" size="40" placeholder="Serch for products,brands amd more">
+                   <button type="submit" class="searchButton">
+                     <i class="fa fa-search"></i>
+                  </button>
+                </div>
+             </div>
+            </form>
           </div>
           
           <!--Login button-->
           <div class="col" style="color: aliceblue;">
             
-            <button type="button" class="btn btn-light" style="border-radius: 1px; margin-top: 10px; padding: 5px 25px 5px 25px;" >Login</button>
+            <button type="button" class="btn btn-light login" >Login</button>
           
+          </div>
+
+          <div class="col more_options"> 
+              <div class="more">
+                More  
+              </div>
           </div>
       
         </div>
@@ -55,25 +61,42 @@
     </div>  
 
    <style>
-     .submit_button{
-      justify-content: flex-end;
-    border: 1px solid #fff;
-    background-color: #fff;
-    height: 36px;
-    width: 44px;
-    border-radius: 2px;
-    cursor: pointer;
-    padding: 4px 12px 0 8px;
+     .name{
+       padding: 7px 0px;
      }
-     .icon {
-      padding: 10px;
-      background: rgb(249, 250, 252);
-      color: #276cdb;
-      min-width: 50px;
+     .search{
+      width: 100%;
+      position: relative;
+      display: flex;
+      padding-top: 10px;
+     }
+     .searchTerm {
+      width: 40;
+      border: 3px solid #ffffff;
+      border-right: none;
+      padding: 5px;
+      height: 20px;
+      border-radius: 1px 0 0 1px;
+      outline: none;
+      color: #000000;
+      }
+     .searchButton {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ffffff;
+      background: #ffffff;
       text-align: center;
-      text-decoration: none;
-      
-     }
+      color: #276cdb;
+      cursor: pointer;
+      font-size: 20px;
+      }
+
+      .login{
+        color: #276cdb;
+        padding: 5px 40px;
+        border-radius: 1px;
+        margin: 10px 0px;
+      }
    </style> 
 
 
